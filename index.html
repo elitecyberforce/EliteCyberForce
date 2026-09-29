@@ -1,0 +1,450 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Rakib Khan | Account Recovery & Cybersecurity</title><style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#070b14;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(7,11,20,.88);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-container{
+    max-width:1100px;
+    margin:auto;
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+.logo span{
+    color:#fff;
+}
+
+nav a{
+    color:#bbb;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 70px;
+    background:
+    radial-gradient(circle at top,#123044 0,#070b14 45%);
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid #00e5ff;
+    border-radius:30px;
+    color:#00e5ff;
+    font-size:13px;
+    margin-bottom:22px;
+}
+
+.hero h1{
+    font-size:clamp(42px,8vw,75px);
+    margin-bottom:10px;
+}
+
+.hero h1 span{
+    color:#00e5ff;
+}
+
+.hero h2{
+    color:#bfc8d6;
+    font-size:clamp(20px,4vw,30px);
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#9ca8b8;
+    max-width:650px;
+    margin:auto;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    margin:6px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.primary{
+    background:#00e5ff;
+    color:#001014;
+}
+
+.secondary{
+    border:1px solid #334155;
+    color:#fff;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* GENERAL */
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:90px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.section-title span{
+    color:#00e5ff;
+}
+
+.section-title p{
+    color:#8994a5;
+    margin-top:8px;
+}
+
+/* ABOUT */
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.about-card{
+    background:#0d1421;
+    border:1px solid #1c2938;
+    padding:30px;
+    border-radius:15px;
+}
+
+.about-card h3{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#aab4c2;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service{
+    background:#0d1421;
+    padding:28px;
+    border-radius:15px;
+    border:1px solid #1c2938;
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-6px);
+    border-color:#00e5ff;
+}
+
+.icon{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.service h3{
+    margin-bottom:10px;
+}
+
+.service p{
+    color:#9ca8b8;
+    font-size:14px;
+}
+
+/* PROCESS */
+.process{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.step{
+    text-align:center;
+    padding:25px 15px;
+    background:#0d1421;
+    border-radius:12px;
+    border:1px solid #1c2938;
+}
+
+.number{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#00e5ff;
+    color:#001014;
+    font-weight:bold;
+}
+
+/* PROOF GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.proof{
+    background:#0d1421;
+    border:1px solid #1c2938;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.proof img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.proof-content{
+    padding:18px;
+}
+
+.proof-content h3{
+    font-size:18px;
+}
+
+.proof-content p{
+    color:#8f9bab;
+    font-size:13px;
+    margin-top:5px;
+}
+
+/* TRUST */
+.trust{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.trust-card{
+    background:#0d1421;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #1c2938;
+}
+
+.trust-card h3{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact-box{
+    max-width:750px;
+    margin:auto;
+    text-align:center;
+    padding:45px 25px;
+    border-radius:20px;
+    background:linear-gradient(145deg,#0d1926,#0a101b);
+    border:1px solid #203243;
+}
+
+.contact-box p{
+    color:#9ca8b8;
+    margin:15px auto 25px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px 20px;
+    border-top:1px solid #172131;
+    color:#697586;
+    font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+
+    nav .menu{
+        display:none;
+    }
+
+    .about,
+    .services,
+    .gallery,
+    .trust{
+        grid-template-columns:1fr;
+    }
+
+    .process{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+}
+
+@media(max-width:480px){
+
+    .process{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:65px 15px;
+    }
+
+    .hero{
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
+</style></head><body><!-- NAVIGATION --><nav>
+<div class="nav-container"><div class="logo">
+RK<span>.</span>
+</div><div class="menu">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#proof">Proof</a>
+<a href="#contact">Contact</a>
+</div></div>
+</nav><!-- HERO --><header class="hero"><div class="hero-content"><div class="badge">
+● Available for Professional Projects
+</div><h1>Rakib <span>Khan</span></h1><h2>Account Recovery & Cybersecurity Services</h2><p>
+I provide professional assistance with social media account
+recovery, account security, security hardening and cybersecurity-focused
+digital support.
+</p><div class="buttons"><a href="#contact" class="btn primary">
+Contact Me
+</a><a href="#proof" class="btn secondary">
+View My Work
+</a></div></div></header><!-- ABOUT --><section id="about"><div class="section-title">
+<h2>About <span>Me</span></h2>
+<p>Professional • Transparent • Security Focused</p>
+</div><div class="about"><div class="about-card"><h3>Who I Am</h3><p>
+I'm Rakib Khan, a digital security-focused service provider
+working with account recovery assistance and online account
+security. My approach focuses on legitimate recovery channels,
+identity verification and improving account protection.
+</p></div><div class="about-card"><h3>My Approach</h3><p>
+Every case is different. I first understand the problem,
+review the available recovery options and guide the client
+through the appropriate official process. I do not request
+passwords, OTPs or unnecessary sensitive information.
+</p></div></div></section><!-- SERVICES --><section id="services"><div class="section-title"><h2>My <span>Services</span></h2><p>Digital account & security assistance</p></div><div class="services"><div class="service"><div class="icon">🔐</div><h3>Account Recovery</h3><p>
+Assistance with compromised, locked or inaccessible
+social media accounts using legitimate recovery procedures.
+</p></div><div class="service"><div class="icon">🛡️</div><h3>Account Security</h3><p>
+Security setup guidance including 2FA, recovery methods,
+login protection and account security best practices.
+</p></div><div class="service"><div class="icon">🔎</div><h3>Security Assessment</h3><p>
+Basic security-focused assessment to identify common
+account protection weaknesses and improve security posture.
+</p></div><div class="service"><div class="icon">📱</div><h3>Social Media Support</h3><p>
+Technical guidance for Facebook, Instagram and other
+supported online platforms.
+</p></div><div class="service"><div class="icon">🚨</div><h3>Compromised Account Guidance</h3><p>
+Step-by-step guidance for accounts affected by unauthorized
+access, suspicious activity or changed account details.
+</p></div><div class="service"><div class="icon">⚙️</div><h3>Security Hardening</h3><p>
+Help strengthening account recovery options, login security
+and privacy settings after successful recovery.
+</p></div></div></section><!-- PROCESS --><section><div class="section-title"><h2>How I <span>Work</span></h2><p>A transparent four-step process</p></div><div class="process"><div class="step"><div class="number">01</div><h3>Assessment</h3><p>Understand the account issue.</p></div><div class="step"><div class="number">02</div><h3>Verification</h3><p>Review available ownership and recovery information.</p></div><div class="step"><div class="number">03</div><h3>Recovery</h3><p>Follow the appropriate official recovery process.</p></div><div class="step"><div class="number">04</div><h3>Protection</h3><p>Improve security after recovery.</p></div></div></section><!-- WORK PROOF --><section id="proof"><div class="section-title"><h2>Work <span>Proof</span></h2><p>Selected project screenshots & demonstrations</p></div><div class="gallery"><!-- PROOF 01 --><div class="proof"><img src="images/proof-1.jpg" alt="Account recovery project"><div class="proof-content"><h3>Account Recovery Case</h3><p>
+Demonstration / anonymized project result.
+</p></div></div><!-- PROOF 02 --><div class="proof"><img src="images/proof-2.jpg" alt="Security project"><div class="proof-content"><h3>Security Assistance</h3><p>
+Security setup and account protection demonstration.
+</p></div></div><!-- PROOF 03 --><div class="proof"><img src="images/proof-3.jpg" alt="Social media project"><div class="proof-content"><h3>Social Media Support</h3><p>
+Example of a completed support project.
+</p></div></div><!-- PROOF 04 --><div class="proof"><img src="images/proof-4.jpg" alt="Cybersecurity project"><div class="proof-content"><h3>Security Assessment</h3><p>
+Anonymized security assessment demonstration.
+</p></div></div><!-- PROOF 05 --><div class="proof"><img src="images/proof-5.jpg" alt="Account security project"><div class="proof-content"><h3>Account Protection</h3><p>
+Account security hardening demonstration.
+</p></div></div><!-- PROOF 06 --><div class="proof"><img src="images/proof-6.jpg" alt="Client project"><div class="proof-content"><h3>Client Project</h3><p>
+Add your own verified project evidence here.
+</p></div></div></div></section><!-- TRUST --><section><div class="section-title"><h2>Why Work With <span>Me?</span></h2></div><div class="trust"><div class="trust-card"><h3>🔒 Privacy First</h3><p>
+Client information should be handled responsibly.
+Sensitive information should never be unnecessarily shared.
+</p></div><div class="trust-card"><h3>✅ Transparent Process</h3><p>
+Clear communication about what can and cannot be done
+before starting a project.
+</p></div><div class="trust-card"><h3>🛡️ Security Focused</h3><p>
+The goal is not only recovery but also improving the
+security of the account afterward.
+</p></div></div></section><!-- CONTACT --><section id="contact"><div class="contact-box"><h2>Let's Work Together</h2><p>
+Have an account recovery or security-related issue?
+Send me a message with a brief description of the problem.
+</p><div class="buttons"><a href="https://facebook.com/" target="_blank" class="btn primary">
+Facebook
+</a><a href="https://instagram.com/" target="_blank" class="btn secondary">
+Instagram
+</a><a href="mailto:your@email.com" class="btn secondary">
+Email Me
+</a></div></div></section><!-- FOOTER --><footer>© 2026 Rakib Khan. All Rights Reserved.
+
+<br>Account Recovery • Digital Security • Cybersecurity Support
+
+</footer></body>
+</html>
